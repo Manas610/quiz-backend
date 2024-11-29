@@ -21,10 +21,9 @@ app.use(bodyParser.json())
 
 const server = http.createServer(app)
 
-const distFolderPath = path.join(__dirname, 'data');
-console.log('Checking contents of dist/data folder:', fs.readdirSync(distFolderPath));
+// Build the correct path to history.json inside dist/data
+const filePath = path.resolve(__dirname, '..', 'data', 'history.json'); // Adjust if needed based on actual folder structure
 
-const filePath = path.join(distFolderPath, 'history.json');
 console.log('Looking for file at:', filePath);
 
 try {
