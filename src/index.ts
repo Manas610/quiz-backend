@@ -21,19 +21,6 @@ app.use(bodyParser.json())
 
 const server = http.createServer(app)
 
-// Build the correct path to history.json inside dist/data
-const filePath = path.resolve(__dirname, '..', 'data', 'history.json'); // Adjust if needed based on actual folder structure
-
-console.log('Looking for file at:', filePath);
-
-try {
-  const jsonData = fs.readFileSync(filePath, 'utf-8');
-  const data = JSON.parse(jsonData);
-  console.log(data);
-} catch (err) {
-  console.error('Error reading the file:', err);
-}
-
 app.get('/data', (req, res) => {
     const filePath = path.join(__dirname, './data/history.json');
     
