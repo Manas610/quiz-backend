@@ -1,3 +1,4 @@
+require("dotenv").config()
 import express, { Request, Response } from 'express';
 import http from 'http'
 import bodyParser from 'body-parser'
@@ -77,6 +78,4 @@ app.get('/data/*', (req: Request, res: Response) => {
   });
 
 
-server.listen(8080 , ()=> {
-    console.log(`server running on http://localhost:8080/`)
-})
+server.listen(process.env.PORT)
