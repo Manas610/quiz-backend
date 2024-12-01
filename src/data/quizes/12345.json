@@ -1,0 +1,86 @@
+{
+  "class_11": [
+    {
+      "q": "Which is the largest continent by land area?",
+      "i": [],
+      "c": "Asia",
+      "o": ["Africa", "North America", "Europe"],
+      "e": "Asia is the largest continent, covering approximately 44.58 million square kilometers.",
+      "s": []
+    },
+    {
+      "q": "What is the primary reason for the occurrence of seasons on Earth?",
+      "i": [],
+      "c": "The tilt of Earth's axis",
+      "o": ["Earth's rotation", "Distance from the Sun", "Solar flares"],
+      "e": "Seasons occur due to the 23.5° tilt of Earth's axis, causing variations in sunlight distribution.",
+      "s": []
+    },
+    {
+      "q": "Which layer of the Earth's atmosphere is closest to the surface?",
+      "i": [],
+      "c": "Troposphere",
+      "o": ["Stratosphere", "Mesosphere", "Thermosphere"],
+      "e": "The troposphere is the lowest layer of Earth's atmosphere where weather phenomena occur.",
+      "s": []
+    },
+    {
+      "q": "Which desert is the largest in the world?",
+      "i": [],
+      "c": "Sahara Desert",
+      "o": ["Gobi Desert", "Kalahari Desert", "Arctic Desert"],
+      "e": "The Sahara Desert in Africa is the largest hot desert, covering approximately 9 million square kilometers.",
+      "s": []
+    },
+    {
+      "q": "Which mountain range is the longest in the world?",
+      "i": [],
+      "c": "Andes",
+      "o": ["Himalayas", "Rockies", "Alps"],
+      "e": "The Andes, located in South America, are the longest mountain range, stretching about 7,000 km.",
+      "s": []
+    }
+  ],
+  "class_12": [
+    {
+      "q": "What is the longest river in the world?",
+      "i": [],
+      "c": "Nile River",
+      "o": ["Amazon River", "Yangtze River", "Mississippi River"],
+      "e": "The Nile River, flowing through northeastern Africa, is considered the longest river at 6,650 km.",
+      "s": []
+    },
+    {
+      "q": "Which is the smallest country in the world by area?",
+      "i": [],
+      "c": "Vatican City",
+      "o": ["Monaco", "San Marino", "Liechtenstein"],
+      "e": "Vatican City, an independent city-state within Rome, Italy, is the smallest country with an area of just 44 hectares.",
+      "s": []
+    },
+    {
+      "q": "What is the primary cause of ocean currents?",
+      "i": [],
+      "c": "Wind",
+      "o": ["Earth's rotation", "Salinity differences", "Gravitational pull"],
+      "e": "Ocean currents are primarily driven by wind, which transfers energy to the water's surface.",
+      "s": []
+    },
+    {
+      "q": "What is the primary component of Earth's core?",
+      "i": [],
+      "c": "Iron and Nickel",
+      "o": ["Silicon", "Magnesium", "Aluminum"],
+      "e": "The Earth's core is composed mainly of iron and nickel, making it dense and metallic.",
+      "s": []
+    },
+    {
+      "q": "Which is the deepest point in the Earth's oceans?",
+      "i": [],
+      "c": "Mariana Trench",
+      "o": ["Java Trench", "Puerto Rico Trench", "Tonga Trench"],
+      "e": "The Mariana Trench in the Pacific Ocean is the deepest, reaching nearly 11 km below sea level.",
+      "s": []
+    }
+  ]
+}
