@@ -1,0 +1,127 @@
+{
+    "quizID": 999999,
+    "time": 600,
+    "attempts": 236,
+    "questions": [
+        {
+            "q": "Who is known as the 'Father of History'?",
+            "i": [],
+            "c": "Herodotus",
+            "o": [
+                "Thucydides",
+                "Plato",
+                "Aristotle"
+            ],
+            "e": "Herodotus is known as the 'Father of History' because he was the first to collect historical data systematically and critically analyze it.",
+            "s": []
+        },
+        {
+            "q": "What was the main occupation of the people of the Indus Valley Civilization?",
+            "i": [],
+            "c": "Agriculture",
+            "o": [
+                "Hunting",
+                "Trading",
+                "Weaving"
+            ],
+            "e": "Agriculture was the primary occupation as the fertile land near rivers supported farming activities.",
+            "s": []
+        },
+        {
+            "q": "Which period is referred to as the Vedic Age?",
+            "i": [],
+            "c": "1500-500 BCE",
+            "o": [
+                "2000-1500 BCE",
+                "1000-500 BCE",
+                "500 BCE-500 CE"
+            ],
+            "e": "The Vedic Age, marked by the composition of the Vedas, lasted from 1500 BCE to 500 BCE.",
+            "s": []
+        },
+        {
+            "q": "Who composed the Rigveda?",
+            "i": [],
+            "c": "Aryans",
+            "o": [
+                "Dravidians",
+                "Harappans",
+                "Persians"
+            ],
+            "e": "The Aryans composed the Rigveda, which is one of the oldest sacred texts.",
+            "s": []
+        },
+        {
+            "q": "What was the primary purpose of Ashoka's Dhamma policy?",
+            "i": [],
+            "c": "To maintain harmony among diverse groups",
+            "o": [
+                "To promote Buddhism",
+                "To increase trade",
+                "To expand the empire"
+            ],
+            "e": "Ashoka's Dhamma policy aimed to promote peace and harmony among people of different communities.",
+            "s": []
+        },
+        {
+            "q": "Which script was used in the Harappan civilization?",
+            "i": [],
+            "c": "Unknown script",
+            "o": [
+                "Brahmi",
+                "Devanagari",
+                "Kharosthi"
+            ],
+            "e": "The script used by the Harappan civilization remains undeciphered and is termed an 'unknown script.'",
+            "s": []
+        },
+        {
+            "q": "What was the capital of the Mauryan Empire under Chandragupta Maurya?",
+            "i": [],
+            "c": "Pataliputra",
+            "o": [
+                "Taxila",
+                "Kalinga",
+                "Ujjain"
+            ],
+            "e": "Pataliputra (modern-day Patna) was the capital of the Mauryan Empire under Chandragupta Maurya.",
+            "s": []
+        },
+        {
+            "q": "Who was the founder of the Gupta Empire?",
+            "i": [],
+            "c": "Chandragupta I",
+            "o": [
+                "Chandragupta II",
+                "Samudragupta",
+                "Skandagupta"
+            ],
+            "e": "Chandragupta I is credited with founding the Gupta Empire around 320 CE.",
+            "s": []
+        },
+        {
+            "q": "The Sangam literature is associated with which region?",
+            "i": [],
+            "c": "South India",
+            "o": [
+                "North India",
+                "Central India",
+                "Eastern India"
+            ],
+            "e": "Sangam literature, composed in Tamil, is closely associated with South India.",
+            "s": []
+        },
+        {
+            "q": "Which Chinese traveler visited India during the Gupta period?",
+            "i": [],
+            "c": "Fa-Hien",
+            "o": [
+                "Xuanzang",
+                "I-Tsing",
+                "Marco Polo"
+            ],
+            "e": "Fa-Hien visited India during the Gupta period and documented the social and religious conditions of the time.",
+            "s": []
+        }
+    ]
+}
