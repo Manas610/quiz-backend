@@ -33,7 +33,7 @@ app.get('/data', (req, res) => {
       
       try {
         const jsonData = JSON.parse(data);
-        res.json(jsonData);
+        return res.json(jsonData);
       } catch (parseErr) {
         console.error('Error parsing JSON:', parseErr);
         res.status(500).json({ error: 'Failed to parse data' });
