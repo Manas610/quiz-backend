@@ -1,6 +1,176 @@
 {
-    "subjects": {
-        "History" : ["1" , "2"],
-        "Geography" : ["3" , "4"]
-    }
+    "subjects": [
+        {
+            "id": "HIS",
+            "name": "History",
+            "books": [
+                {
+                    "id": "HIS6",
+                    "class": "6th",
+                    "name": "Our Pasts - I",
+                    "chapters": [
+                        {
+                            "id": "1",
+                            "name": "What, Where, How and When?",
+                            "quizCode": "HIS601"
+                        },
+                        {
+                            "id": "2",
+                            "name": "On The Trail of the Earliest People",
+                            "quizCode": "HIS602"
+                        },
+                        {
+                            "id": "3",
+                            "name": "From Gathering to Growing Food",
+                            "quizCode": "HIS603"
+                        },
+                        {
+                            "id": "4",
+                            "name": "In the Earliest Cities",
+                            "quizCode": "HIS604"
+                        },
+                        {
+                            "id": "5",
+                            "name": "What Books and Burials Tell Us",
+                            "quizCode": "HIS605"
+                        }
+                    ]
+                },
+                {
+                    "id": "HIS7",
+                    "class": "7th",
+                    "name": "Our Pasts - II",
+                    "chapters": [
+                        {
+                            "id": "1",
+                            "name": "Tracing Changes Through a Thousand Years",
+                            "quizCode": "HIS701"
+                        },
+                        {
+                            "id": "2",
+                            "name": "New Kings and Kingdoms",
+                            "quizCode": "HIS702"
+                        },
+                        {
+                            "id": "3",
+                            "name": "The Delhi Sultans",
+                            "quizCode": "HIS703"
+                        },
+                        {
+                            "id": "4",
+                            "name": "The Mughal Empire",
+                            "quizCode": "HIS704"
+                        },
+                        {
+                            "id": "5",
+                            "name": "Rulers and Buildings",
+                            "quizCode": "HIS705"
+                        }
+                    ]
+                },
+                {
+                    "id": "HIS1",
+                    "class": "10th",
+                    "name": "T in World History",
+                    "chapters": [
+                        {
+                            "id": "1",
+                            "name": "Tracing Changes Through a Thousand Years",
+                            "quizCode": "HIS101"
+                        },
+                        {
+                            "id": "2",
+                            "name": "New Kings and Kingdoms",
+                            "quizCode": "HIS102"
+                        },
+                        {
+                            "id": "3",
+                            "name": "The Delhi Sultans",
+                            "quizCode": "HIS103"
+                        },
+                        {
+                            "id": "4",
+                            "name": "The Mughal Empire",
+                            "quizCode": "HIS104"
+                        },
+                        {
+                            "id": "5",
+                            "name": "Rulers and Buildings",
+                            "quizCode": "HIS105"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "GEO",
+            "name": "Geography",
+            "books": [
+                {
+                    "id": "GEO6",
+                    "class": "6th",
+                    "name": "The Earth Our Habitat",
+                    "chapters": [
+                        {
+                            "id": "1",
+                            "name": "The Earth in the Solar System",
+                            "quizCode": "GEO601"
+                        },
+                        {
+                            "id": "2",
+                            "name": "Globe: Latitudes and Longitudes",
+                            "quizCode": "GEO602"
+                        },
+                        {
+                            "id": "3",
+                            "name": "Motions of the Earth",
+                            "quizCode": "GEO603"
+                        },
+                        {
+                            "id": "4",
+                            "name": "Maps",
+                            "quizCode": "GEO604"
+                        },
+                        {
+                            "id": "5",
+                            "name": "Major Domains of the Earth",
+                            "quizCode": "GEO605"
+                        }
+                    ]
+                },
+                {
+                    "id": "GEO7",
+                    "class": "7th",
+                    "name": "Our Environment",
+                    "chapters": [
+                        {
+                            "id": "1",
+                            "name": "Environment",
+                            "quizCode": "GEO701"
+                        },
+                        {
+                            "id": "2",
+                            "name": "Inside Our Earth",
+                            "quizCode": "GEO702"
+                        },
+                        {
+                            "id": "3",
+                            "name": "Our Changing Earth",
+                            "quizCode": "GEO703"
+                        },
+                        {
+                            "id": "4",
+                            "name": "Air",
+                            "quizCode": "GEO704"
+                        },
+                        {
+                            "id": "5",
+                            "name": "Water",
+                            "quizCode": "GEO705"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
