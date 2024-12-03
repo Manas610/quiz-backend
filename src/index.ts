@@ -22,27 +22,8 @@ app.use(bodyParser.json())
 
 const server = http.createServer(app)
 
-app.get('/data', (req, res) => {
-    const filePath = path.join(__dirname, './data/index.json');
-    
-    fs.readFile(filePath, 'utf8', (err, data) => {
-      if (err) {
-        console.error('Error reading the file:', err);
-        return res.status(500).json({ error: 'Failed to load data' });
-      }
-      
-      try {
-        const jsonData = JSON.parse(data);
-        return res.json(jsonData);
-      } catch (parseErr) {
-        console.error('Error parsing JSON:', parseErr);
-        res.status(500).json({ error: 'Failed to parse data' });
-      }
-    });
-  });
-
-// app.get('/data/quizes/*', (req: Request, res: Response) => {
-//     const filePath = path.join(__dirname, './data/quizes/history.json');
+// app.get('/data', (req, res) => {
+//     const filePath = path.join(__dirname, './data/index.json');
     
 //     fs.readFile(filePath, 'utf8', (err, data) => {
 //       if (err) {
@@ -51,22 +32,8 @@ app.get('/data', (req, res) => {
 //       }
       
 //       try {
-//         const jsonData: HistoryData = JSON.parse(data);
-  
-//         // Extract the dynamic path after `/data/`
-//         const subPath = req.params[0]; // Gets everything after `/data/`
-//         const keys = subPath.split('/'); // Split path into keys
-  
-//         // Navigate through the JSON using the keys
-//         let result = jsonData;
-//         for (const key of keys) {
-//           if (result[key] === undefined) {
-//             return res.status(404).json({ error: 'Path not found in JSON' });
-//           }
-//           result = result[key];
-//         }
-  
-//         res.json(result);
+//         const jsonData = JSON.parse(data);
+//         return res.json(jsonData);
 //       } catch (parseErr) {
 //         console.error('Error parsing JSON:', parseErr);
 //         res.status(500).json({ error: 'Failed to parse data' });
@@ -74,58 +41,41 @@ app.get('/data', (req, res) => {
 //     });
 //   });
 
-// app.get('/data/quizes/:quizId', (req: Request, res: Response) => {
-//   const quizId = req.params.quizId;
-//   const filePath = path.join(__dirname, './data/quizes', `${quizId}.json`);
-//   const metaPath = path.join(__dirname, './data/meta.json');
+app.get('/data', async (req: Request, res: Response): Promise<void> => {
+  const indexPath = path.join(__dirname, './data/index.json');
+  const metaPath = path.join(__dirname, './data/meta.json');
 
-//   // Check if the file exists
-//   fs.access(filePath, fs.constants.F_OK, (err) => {
-//     if (err) {
-//       console.error('File not found:', filePath);
-//       return res.status(404).json({ error: 'File not found' });
-//     }
+  try {
+    // Read the index.json file
+    const indexData = await fsp.readFile(indexPath, 'utf8');
+    const indexJson = JSON.parse(indexData);
 
-//     // Read the file if it exists
-//     fs.readFile(filePath, 'utf8', (readErr, data) => {
-//       if (readErr) {
-//         console.error('Error reading the file:', readErr);
-//         return res.status(500).json({ error: 'Failed to load data' });
-//       }
+    // Read the meta.json file
+    const metaData = await fsp.readFile(metaPath, 'utf8');
+    const metaJson = JSON.parse(metaData);
 
+    // Merge total_attempts into the index data
+    indexJson.subjects.forEach((subject: any) => {
+      subject.books.forEach((book: any) => {
+        book.chapters.forEach((chapter: any) => {
+          const quizCode = chapter.quizCode;
 
-//       // Read the metadata file
-//       fs.readFile(metaPath, 'utf8', (readMetaErr, metaData) => {
-//         if (readMetaErr) {
-//           console.error('Error reading the metadata file:', readMetaErr);
-//           return res.status(500).json({ error: 'Failed to load metadata' });
-//         }
+          // Add total_attempts if it exists in meta.json
+          if (metaJson[quizCode]) {
+            chapter.total_attempts = metaJson[quizCode].total_attempts;
+          } else {
+            chapter.total_attempts = 0; // Default to 0 if not found in meta.json
+          }
+        });
+      });
+    });
 
-//       try {
-//         const quizJson = JSON.parse(data);
-//         const metaJson = JSON.parse(metaData);
-
-//         const meta = metaJson[quizId];
-//         if (!meta) {
-//           return res.status(404).json({ error: 'Metadata not found for the quiz' });
-//         }
-
-//         meta.total_attempts += 1;
-
-//         const response = {
-//           quiz: quizJson,
-//           meta,
-//         };
-
-//         res.json(response); // Return the JSON data
-//       } catch (parseErr) {
-//         console.error('Error parsing JSON:', parseErr);
-//         res.status(500).json({ error: 'Failed to parse data' });
-//       }
-//     });
-//   });
-//   });
-// });
+    res.json(indexJson);
+  } catch (err) {
+    console.error('Error reading or processing files:', err);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
 app.get('/quizes/:quizId', async (req: Request, res: Response): Promise<void> => {
   const quizId = req.params.quizId; // Extract the quiz ID from the URL
@@ -158,8 +108,8 @@ app.get('/quizes/:quizId', async (req: Request, res: Response): Promise<void> =>
 
     // Combine quiz data with updated metadata
     const response = {
-      quiz: quizJson,
-      meta: metaJson[quizId],
+      ...metaJson[quizId],
+      ...quizJson,
     };
 
     res.json(response);

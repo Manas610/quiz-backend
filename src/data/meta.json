@@ -1,14 +1,22 @@
 {
-  "12345": {
+  "GEO701": {
+    "quizID": "GEO701",
     "time_duration": 15,
     "total_attempts": 62
   },
-  "23456": {
+  "GEO702": {
+    "quizID": "GEO702",
     "time_duration": 20,
     "total_attempts": 45
   },
-  "99999": {
-    "time_duration": 600,
-    "total_attempts": 236
+  "HIS101": {
+    "quizID": "HIS101",
+    "time_duration": 20,
+    "total_attempts": 81
+  },
+  "HIS701": {
+    "quizID": "HIS701",
+    "time_duration": 20,
+    "total_attempts": 45
   }
 }
