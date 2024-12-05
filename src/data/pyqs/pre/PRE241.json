@@ -1,0 +1,12 @@
+{
+    "questions": [
+        {
+            "q": "Who led the Revolt of 1857 in Kanpur?",
+            "i": [],
+            "c": "Nana Saheb",
+            "o": ["Rani Lakshmibai", "Bahadur Shah Zafar", "Tantia Tope"],
+            "e": "Nana Saheb was a prominent leader of the 1857 Revolt in Kanpur against British rule.",
+            "s": []
+        }
+    ]
+}
