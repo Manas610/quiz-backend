@@ -77,9 +77,9 @@ app.get('/data', async (req: Request, res: Response): Promise<void> => {
   }
 });
 
-app.get('/quizes/:quizId', async (req: Request, res: Response): Promise<void> => {
+app.get('/quiz/:quizId', async (req: Request, res: Response): Promise<void> => {
   const quizId = req.params.quizId; // Extract the quiz ID from the URL
-  const quizPath = path.join(__dirname, './data/quizes', `${quizId}.json`);
+  const quizPath = path.join(__dirname, './data/ncerts', `${quizId}.json`);
   const metaPath = path.join(__dirname, './data/meta.json');
 
   try {
