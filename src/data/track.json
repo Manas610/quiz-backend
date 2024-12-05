@@ -1,6 +1,52 @@
 {
     "syllabus": [
         {
+            "id": "GEO",
+            "name": "Geography",
+            "books": [
+                {
+                    "id": "GEO6",
+                    "name": "Class 6 NCERT - The Earth Our Habitat",
+                    "topics": []
+                },
+                {
+                    "id": "GEO7",
+                    "name": "Class 7 NCERT - Our Environment",
+                    "topics": []
+                },
+                {
+                    "id": "GEO8",
+                    "name": "Class 8 NCERT - Resource and Development",
+                    "topics": []
+                },
+                {
+                    "id": "GEO9",
+                    "name": "Class 9 NCERT - Contemporary India I",
+                    "topics": []
+                },
+                {
+                    "id": "GEO1",
+                    "name": "Class 10 NCERT - Contemporary India II",
+                    "topics": []
+                },
+                {
+                    "id": "GEO2",
+                    "name": "Class 11 NCERT - Fundamentals of Physical Geography",
+                    "topics": []
+                },
+                {
+                    "id": "GEO3",
+                    "name": "Class 12 NCERT - India: People and Economy",
+                    "topics": []
+                },
+                {
+                    "id": "GCLEONG",
+                    "name": "Certificate Physical and Human Geography by G.C. Leong",
+                    "topics": []
+                }
+            ]
+        },
+        {
             "id": "HIS",
             "name": "History",
             "books": [
@@ -42,52 +88,6 @@
                 {
                     "id": "BIPIN",
                     "name": "India's Struggle for Independence by Bipin Chandra",
-                    "topics": []
-                }
-            ]
-        },
-        {
-            "id": "GEO",
-            "name": "Geography",
-            "books": [
-                {
-                    "id": "GEO6",
-                    "name": "Class 6 NCERT - The Earth Our Habitat",
-                    "topics": []
-                },
-                {
-                    "id": "GEO7",
-                    "name": "Class 7 NCERT - Our Environment",
-                    "topics": []
-                },
-                {
-                    "id": "GEO8",
-                    "name": "Class 8 NCERT - Resource and Development",
-                    "topics": []
-                },
-                {
-                    "id": "GEO9",
-                    "name": "Class 9 NCERT - Contemporary India I",
-                    "topics": []
-                },
-                {
-                    "id": "GEO10",
-                    "name": "Class 10 NCERT - Contemporary India II",
-                    "topics": []
-                },
-                {
-                    "id": "GEO11",
-                    "name": "Class 11 NCERT - Fundamentals of Physical Geography",
-                    "topics": []
-                },
-                {
-                    "id": "GEO12",
-                    "name": "Class 12 NCERT - India: People and Economy",
-                    "topics": []
-                },
-                {
-                    "id": "GCLEONG",
-                    "name": "Certificate Physical and Human Geography by G.C. Leong",
                     "topics": []
                 }
             ]
